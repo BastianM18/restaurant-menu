@@ -11,7 +11,7 @@ header label {
     border-right: 1px solid #fff;
 }
 
-header {
+.menu-horizontal {
     background-color: #822323;
     position: fixed;
     width: 100%;
@@ -151,8 +151,45 @@ main {
     color: #822323;
 }
 
-strong {
-    font-size: 1px;
+#movil {
+    display: none;
+}
+
+#movil {
+    width: 100%;
+}
+
+#movil nav {
+    max-width: 1000px;
+    background: #641515;
+}
+
+.menu-bar {
+    display: none;
+}
+
+#movil nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+
+#movil nav ul li {
+    float: left;
+}
+
+#movil nav ul li a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+#movil nav ul li span {
+    margin-right: 10px;
+}
+
+#movil nav ul li a:hover {
+    background-color: #822323;
 }
 
 /*ENTRADAS*/
@@ -253,11 +290,69 @@ footer a:hover {
 }
 
 @media screen and (max-width: 486px) {
-    
-    header {
+    .menu-horizontal {
         display: none;
     }
- 
+
+    #movil {
+        display: flex;
+        font-family: sans-serif;
+    }
+
+    #movil nav {
+        /* width: 80%;
+        height: 84%; */
+        width: 80%;
+        height: auto;
+        left: -100%;
+        margin-top: 66.4px;
+        position: fixed;
+    }
+
+    #movil nav ul {
+        padding: 0;
+    }
+
+    #movil nav ul li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #ccc
+    }
+
+    #movil nav ul li a {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    #movil nav ul li a span {
+        padding-right: 5px;
+        font-size: 30px;
+    }
+
+    .menu-bar {
+        display: block;
+        width: 100%;
+        background-color: #ccc;
+    }
+
+    .menu-bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background: #641515;
+        color: #fff;
+        font-weight: bold;
+        font-size: 22px;
+        text-decoration: none;
+        --webkit-box-sizing:border-box;
+        -moz-blx-sizing:border-box;
+        box-sizing: border-box;
+    }
+
+    .menu-bar span {
+        float: right;
+        font-size: 40px;
+    }
+
     .menu {
         font-size: 13px;
     }
@@ -274,6 +369,14 @@ footer a:hover {
     h2 {
         display: flex;
         justify-content: center;
+    }
+
+    .menu-group-heading {
+        margin-top: 10px;
+    }
+
+    .menu-item-heading {
+        margin-bottom: 5px;
     }
 }
 
